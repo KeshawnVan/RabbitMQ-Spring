@@ -1,4 +1,4 @@
-package com.example.rabbit;
+package com.star.amqp;
 
 import java.io.Serializable;
 
