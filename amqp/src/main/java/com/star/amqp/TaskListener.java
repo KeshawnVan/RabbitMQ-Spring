@@ -18,10 +18,8 @@ public class TaskListener {
     private RabbitTemplate amqpTemplate;
 
     @RabbitHandler
-    @RabbitListener(queues = "hello")
+    @RabbitListener(queues = "delay-dispatcher")
     public void process(@Payload SmsDTO message) {
-
         LOGGER.info(message.toString());
-
     }
 }
